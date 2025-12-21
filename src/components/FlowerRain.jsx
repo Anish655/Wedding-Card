@@ -1,8 +1,8 @@
 
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import realRosePetal from '../assets/real_rose_petal.png';
-import realMarigold from '../assets/real_marigold.png';
+import realRosePetal from '../assets/real_rose_petal_optimized.webp';
+import realMarigold from '../assets/real_marigold_optimized.webp';
 
 const FlowerRain = () => {
     const [flowers, setFlowers] = useState([]);

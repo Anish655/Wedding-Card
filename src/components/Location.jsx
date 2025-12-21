@@ -26,13 +26,20 @@ const Location = () => {
 
       <div className="rsvp-msg">
         <p>We eagerly await your presence!</p>
-        <p className="contact">Contact: +91 91630 40783</p>
+        <p style={{ marginBottom: '0.5rem' }}>Contact:</p>
+        <div className="contact-numbers" style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontWeight: 'bold', fontSize: '1.2rem' }}>
+          <a href="tel:+919163040783" style={{ color: 'inherit', textDecoration: 'none' }}>+91 91630 40783</a>
+          <a href="tel:+916292303439" style={{ color: 'inherit', textDecoration: 'none' }}>+91 62923 03439</a>
+          <a href="tel:+917980651193" style={{ color: 'inherit', textDecoration: 'none' }}>+91 79806 51193</a>
+        </div>
       </div>
 
       <style>{`
         .location-section {
-          /* background-color: var(--color-primary); Removed for global bg */
-          color: var(--color-primary); /* Changed to primary (dark) */
+          background-color: rgba(255, 253, 208, 0.9); /* Cream background for visibility */
+          border-radius: 1rem;
+          margin: 2rem 1rem;
+          color: var(--color-primary); 
           padding: 4rem 2rem;
           text-align: center;
         }
