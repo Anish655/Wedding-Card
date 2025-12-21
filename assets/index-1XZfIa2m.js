@@ -477,12 +477,17 @@ Error generating stack: `+i.message+`
 
       `})]})},yA=()=>S.jsxs("section",{id:"location",className:"location-section",children:[S.jsx("h2",{children:"Reception Venue"}),S.jsxs("div",{className:"venue-details",children:[S.jsx("h3",{children:"CB Market Community Hall"}),S.jsx("p",{children:"C.B Market 2nd floor, Action Area-1"}),S.jsx("p",{children:"New Town, Kolkata-700156"})]}),S.jsx("div",{className:"map-container",children:S.jsx("iframe",{src:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d376.213088052809!2d88.46536403312447!3d22.57761911140072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027585d702a537%3A0x6e39760c7071c3da!2sCB%20Community%20Hall%20Newtown!5e0!3m2!1sen!2sin!4v1766004912239!5m2!1sen!2sin",width:"100%",height:"400",style:{border:0},allowFullScreen:"",loading:"lazy",title:"Venue Map"})}),S.jsxs("div",{className:"rsvp-msg",children:[S.jsx("p",{children:"We eagerly await your presence!"}),S.jsx("p",{style:{marginBottom:"0.5rem"},children:"Contact:"}),S.jsxs("div",{className:"contact-numbers",style:{display:"flex",flexDirection:"column",gap:"0.5rem",fontWeight:"bold",fontSize:"1.2rem"},children:[S.jsx("a",{href:"tel:+919163040783",style:{color:"inherit",textDecoration:"none"},children:"+91 91630 40783"}),S.jsx("a",{href:"tel:+916292303439",style:{color:"inherit",textDecoration:"none"},children:"+91 62923 03439"}),S.jsx("a",{href:"tel:+917980651193",style:{color:"inherit",textDecoration:"none"},children:"+91 79806 51193"})]})]}),S.jsx("style",{children:`
         .location-section {
-          background-color: rgba(255, 253, 208, 0.9); /* Cream background for visibility */
-          border-radius: 1rem;
           margin: 2rem 1rem;
           color: var(--color-primary); 
           padding: 4rem 2rem;
           text-align: center;
+        }
+
+        @media (max-width: 768px) {
+          .location-section {
+            background-color: rgba(255, 253, 208, 0.9); /* Cream background for visibility */
+            border-radius: 1rem;
+          }
         }
 
         .location-section h2 {
