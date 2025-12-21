@@ -36,12 +36,17 @@ const Location = () => {
 
       <style>{`
         .location-section {
-          background-color: rgba(255, 253, 208, 0.9); /* Cream background for visibility */
-          border-radius: 1rem;
           margin: 2rem 1rem;
           color: var(--color-primary); 
           padding: 4rem 2rem;
           text-align: center;
+        }
+
+        @media (max-width: 768px) {
+          .location-section {
+            background-color: rgba(255, 253, 208, 0.9); /* Cream background for visibility */
+            border-radius: 1rem;
+          }
         }
 
         .location-section h2 {
