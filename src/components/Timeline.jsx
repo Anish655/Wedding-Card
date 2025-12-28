@@ -63,6 +63,7 @@ const Timeline = () => {
           border-bottom: 2px solid var(--color-secondary);
           display: inline-block;
           padding-bottom: 0.5rem;
+          text-shadow: 0 1px 1px rgba(255, 255, 255, 0.9), 0 0 10px rgba(255, 253, 208, 0.8); /* Halo to pop against text */
         }
 
         .timeline-container {
@@ -75,7 +76,7 @@ const Timeline = () => {
         }
 
         .timeline-card {
-          background: rgba(255, 255, 255, 0.85);
+          background: rgba(255, 255, 255, 0.92); /* Increased opacity */
           border: 2px solid var(--color-primary);
           outline: 1px solid var(--color-secondary);
           outline-offset: -6px;
@@ -87,7 +88,7 @@ const Timeline = () => {
           flex-direction: column;
           align-items: center;
           gap: 0.5rem;
-          backdrop-filter: blur(5px);
+          backdrop-filter: blur(8px); /* Increased blur */
           box-shadow: 0 4px 15px rgba(0,0,0,0.1);
           position: relative;
         }
@@ -97,12 +98,14 @@ const Timeline = () => {
           font-size: 1.8rem;
           margin: 0.5rem 0;
           color: var(--color-primary); /* Dark text */
+          text-shadow: 0 1px 2px rgba(255,255,255,0.8); /* Halo effect */
         }
 
         .timeline-card .date-time {
           font-size: 1.2rem;
           color: #5a0000; /* Darker red for readability */
           font-weight: bold;
+          text-shadow: 0 1px 2px rgba(255,255,255,0.8); /* Halo effect */
         }
 
         .event-icon-img {

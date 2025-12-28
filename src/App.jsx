@@ -24,6 +24,10 @@ function App() {
     description: 'Son of Mr. Biplab Sarkar & Mrs. Debjani Sarkar. A charming gentleman looking forward to a lifetime of happiness.'
   };
 
+  /* Check for Bor Jatri invite parameter */
+  const queryParams = new URLSearchParams(window.location.search);
+  const isBorJatri = queryParams.get('invite') === 'borjatri';
+
   return (
     <BackgroundWrapper>
       <div className="app-container">
@@ -38,10 +42,10 @@ function App() {
           person={selectedPerson}
         />
         <div className="content-container">
-          <Hero />
+          <Hero isBorJatri={isBorJatri} />
           <Timeline />
           <Gallery />
-          <Location />
+          <Location isBorJatri={isBorJatri} />
         </div>
       </div>
     </BackgroundWrapper>

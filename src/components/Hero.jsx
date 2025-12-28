@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import SimpleGoldDivider from './icons/SimpleGoldDivider';
 import '../App.css';
 
-const Hero = () => {
+const Hero = ({ isBorJatri }) => {
   return (
     <section id="home" className="hero-section">
       <div className="card-container">
@@ -20,7 +20,11 @@ const Hero = () => {
 
           {/* Main Content */}
           <div className="card-content">
-            <h3 className="intro-text">We Cordially Invite You to the Reception of</h3>
+            <h3 className="intro-text">
+              {isBorJatri
+                ? "We Cordially Invite You to the Wedding & Reception of"
+                : "We Cordially Invite You to the Reception of"}
+            </h3>
 
             <h1 className="couple-names">
               <span className="groom">Anish</span>
@@ -114,6 +118,7 @@ const Hero = () => {
           font-size: 1.2rem;
           margin-bottom: 2rem;
           font-weight: 400;
+          text-shadow: 0 0 10px rgba(255, 253, 208, 0.8); /* Halo effect */
         }
 
         .couple-names {
@@ -122,6 +127,7 @@ const Hero = () => {
           margin: 2rem 0;
           line-height: 1.2;
           color: var(--color-primary);
+          text-shadow: 2px 2px 4px rgba(255, 253, 208, 0.6); /* Halo effect */
         }
 
         .couple-names span {
